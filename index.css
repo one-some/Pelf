@@ -1,0 +1,109 @@
+body {
+    background-color: #181818;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/* Main */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main-center {
+    flex-grow: 1;
+    max-height: 100%;
+    overflow-y: auto;
+
+    display: flex;
+}
+
+#main-center > * {
+    flex-grow: 1;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Song Cards */
+#song-container {
+    margin-left: 8px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.song-card {
+    background-color: #282828;
+
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.song-card-upper {
+    display: block;
+}
+
+.song-card-lower {
+    opacity: 0.6;
+}
+
+.song-title {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.song-duration {
+    opacity: 0.7;
+}
+
+.song-artist::after {
+    content: " - ";
+}
+
+/* Playbar */
+#playbar {
+    height: 48px;
+    min-height: 48px;
+    width: 100%;
+
+    background-color: #1D1D1D;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#playbar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+playback-button {
+    font-size: 18px;
+}
+
+#playbar-progress {
+    font-family: monospace;
+    opacity: 0.7;
+}
+
+#playbar-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playbar-title {
+}
+
+#playbar-middle-low {
+    opacity: 0.7;
+}

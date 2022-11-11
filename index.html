@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pelf</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="main-center">
+            <div id="image-container">
+                <img src="test.jpeg">
+            </div>
+            <div id="song-container">
+                <input id="upload" type="file" webkitdirectory mozdirectory>
+            </div>
+        </div>
+
+        <div id="playbar">
+            <div id="playbar-left">
+                <div>
+                    <playback-button>⏮</playback-button>
+                    <playback-button>▶</playback-button>
+                    <playback-button>⏭</playback-button>
+                </div>
+                <span id="playbar-progress">0:00 / 7:15</span>
+            </div>
+            <div id="playbar-middle">
+                <span id="playbar-title">Martian World</span>
+                <div id="playbar-middle-low">
+                    <span id="playbar-artist">MarCianito2001</span> - <span id="playbar-album">Big Martian Land</span>
+                </div>
+            </div>
+            volume icon
+        </div>
+    </div>
+
+    <script src="generic.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
